@@ -2,7 +2,7 @@
 
 context('Network Requests', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.iocommands/network-requests')
+    cy.visit('http://example.cypress.io/commands/network-requests')
   })
 
   // Manage HTTP requests in your app

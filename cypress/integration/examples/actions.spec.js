@@ -2,7 +2,7 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/actions')
+    cy.visit('http://example.cypress.io/commands/actions')
   })
 
   // https://on.cypress.io/interacting-with-elements

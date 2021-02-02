@@ -2,7 +2,7 @@
 
 context('Traversal', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.iocommands/traversal')
+    cy.visit('http://example.cypress.io/commands/traversal')
   })
 
   it('.children() - get child DOM elements', () => {

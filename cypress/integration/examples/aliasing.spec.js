@@ -2,7 +2,7 @@
 
 context('Aliasing', () => {
   beforeEach(() => {
-    cy.visit('https://example.cypress.iocommands/aliasing')
+    cy.visit('http://example.cypress.io/commands/aliasing')
   })
 
   it('.as() - alias a DOM element for later use', () => {
