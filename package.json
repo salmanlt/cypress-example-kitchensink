@@ -59,6 +59,7 @@
   },
   "homepage": "https://github.com/cypress-io/cypress-example-kitchensink#readme",
   "dependencies": {
+    "lambdatest-cypress-cli": "git+https://github.com/LambdaTest/lambdatest-cypress-cli.git",
     "npm-run-all": "^4.1.2",
     "serve": "11.3.0"
   },
