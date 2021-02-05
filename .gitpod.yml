@@ -1,0 +1,10 @@
+image:
+    file: .gitpod.Dockerfile
+tasks:
+  - before: npm install -g lambdatest-cypress-cli 
+    init: echo "NPM execute"
+    command: npm run
+# tasks:
+#   - before: git clone  https://github.com/LambdaTest/lambdatest-cypress-cli && cd lambdatest-cypress-cli 
+#     init: echo "npm link"
+#     command: npm i && npm link && cd ..
