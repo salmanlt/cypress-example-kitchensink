@@ -14,8 +14,8 @@
    ],
    "run_settings": {
       "cypress_config_file": "cypress.json",
-      "build_name": "build-name",
-      "parallels": 2,
+      "build_name": "build-name-dash",
+      "parallels": 25,
       "specs": "./cypress/integration/examples/*.spec.js",
       "ignore_files": "",
       "feature_file_suppport": false,
