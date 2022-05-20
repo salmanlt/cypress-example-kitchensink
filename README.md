@@ -1,80 +1,255 @@
-# Kitchen Sink [![renovate-app badge][renovate-badge]][renovate-app] [![semantic-release][semantic-image] ][semantic-url]
 
-![kitchensink](https://cloud.githubusercontent.com/assets/1268976/14084252/e309e370-f4e7-11e5-9562-24f516563ac9.gif)
-![LambdaTest Logo](https://www.lambdatest.com/images/logo.svg)
+![This is an image](https://www.lambdatest.com/resources/images/Cypress_home.png)
 
-This is an example app used to showcase [Cypress.io](https://www.cypress.io/) testing. The application uses every API command in Cypress for demonstration purposes. Additionally this example app is configured to run tests in various CI platforms. The [tests](https://github.com/cypress-io/cypress-example-kitchensink/blob/master/cypress/integration/examples) are also heavily commented. For a full reference of our documentation, go to [docs.cypress.io](https://docs.cypress.io/).
+*Cypress is a modern web front-end testing tool built with JavaScript Mocha. Cypress testing operates directly on the browsers without the need for Selenium. Its unique DOM manipulation technique makes it a very developer and QA-friendly tool. With LambdaTest, you can perform Cypress testing on an online automation cloud of 40+ browsers versions. Learn how to get started with Cypress testing on the LambdaTest platform.*
 
-To see the kitchen sink application, visit [example.cypress.io](https://example.cypress.io/).
 
-[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
-[renovate-app]: https://renovateapp.com/
-[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-url]: https://github.com/semantic-release/semantic-release
+# Getting Started With Cypress Testing
+***
 
-## Help + Testing
+* [Pre-requisites](#pre-requisites)
+* [Running Your First Cypress Test On LambdaTest Platform](#running-your-first-cypress-test-on-lambdatest-platform)
+* [Authentication](#authentication)
+    - [Utilizing CLI Params](#utilizing-cli-params)
+    - [Using lambdatest-config.json](#using-lambdatest-configjson)
+    - [Setup the Environment Variables](#setup-the-environment-variables)
+* [Cypress Parallel Testing](#cypress-parallel-testing)
+* [Cypress CLI Commands](#cypress-cli-commands)
+* [Run Settings](run-settings)
+* [Download Artefact For Cypress Project](download-artefact-for-cypress-project)
+* [Integrate LambdaTest With Cypress Dashboard](integrate-lambdatest-with-cypress-dashboard)
+* [Execute Cypress Tests Including Private Dependencies](execute-cypress-tests-including-private-dependencies)
+# Pre-requisites
 
-**If you get stuck, here is more help:**
+---
 
-* [Gitter Chat](https://gitter.im/cypress-io/cypress)
-* [Cypress Docs](https://on.cypress.io)
+Before we get started, make sure to clone the [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/4DvAnCeBoY/cypress-example-kitchensink), used in this document. You can run your first Cypress test on the LambdaTest platform in a few simple steps:
 
-### 1. Fork this repo
+- **Step 1:** Clone the `LambdaTest-Cypress` kitchen sink example Github repo and navigate to the cloned directory.
 
-If you want to experiment with running this project in Continous Integration, you'll need to [fork](https://github.com/cypress-io/cypress-example-kitchensink#fork-destination-box) it first.
+  ```bash
+  git clone https://github.com/cypress-io/cypress-example-kitchensink.git
+  cd cypress-example-kitchensink
+  ```
 
-After forking this project in `Github`, run these commands:
+- **Step 2: Installing the LambdaTest CLI -**
+  You need to install the **LambdaTest-Cypress CLI** package with the help of npm, using the below command:
+
+  ```bash
+  npm install -g lambdatest-cypress-cli
+  ```
+
+- **Step 3: Setup configurations on which you want to run your test -**
+  Once you have installed the LambdaTest-Cypress CLI, now you need to setup the configuration. You can do that using the below command:
+
+  ```bash
+  lambdatest-cypress init
+  ```
+# Running Your First Cypress Test On LambdaTest Platform
+***
+
+To demonstrate Cypress testing on the LambdaTest platform, we will use the [Cypress’ kitchen sink example](https://github.com/cypress-io/cypress-example-kitchensink) in the demo below.
+
+1.  Clone the [LambdaTest-Cypress’ kitchen sink example](https://github.com/4DvAnCeBoY/cypress-example-kitchensink) github repo and switch to the cloned directory.
 
 ```bash
-## clone this repo to a local directory
-git clone https://github.com/<your-username>/cypress-example-kitchensink.git
-
-## cd into the cloned repo
+git clone https://github.com/cypress-io/cypress-example-kitchensink.git
 cd cypress-example-kitchensink
+```
 
-## install the node_modules
-npm install && npm install -g lambdatest-cypress-cli
+2.  Setup the **LambdaTest-Cypress CLI** and configure the configuration file, as shown in the pre-requisites before. A file named `lambdatest-config.json` is generated in your project using the below command:
 
-## generate LambdaTest Config
+```bash
 lambdatest-cypress init
 ```
 
-**LambdaTest Authentication Credentials:** Make sure you have your LambdaTest credentials with you to run test automation scripts with Jest on LambdaTest Selenium Grid. You can obtain these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/) or through [LambdaTest Profile](https://accounts.lambdatest.com/detail/profile).
+Here, we have used the below configuration as default and generated it in the `lambdatest-config.json` file. You need to set up the authentication by using LambdaTest credentials. You can check [here](https://www.lambdatest.com/support/docs/authentication) for more details about authentication.
 
-Set LambdaTest Username and Access Key in environment variables.
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-* For Linux/macOS:
+<Tabs className="docs__val">
+  <TabItem value="config" label="lambdatest-config.json" default>
 
-    `export LT_USERNAME="YOUR_USERNAME"`
+```json
+{
+  "lambdatest_auth": {
+    "username": "<YOUR_LAMBDATEST_USERNAME>",
+    "access_key": "<Your LambdaTest access key>"
+  },
+  "browsers": [
+    {
+      "browser": "Chrome",
+      "platform": "Windows 10",
+      "versions": ["86.0"]
+    },
+    {
+      "browser": "Firefox",
+      "platform": "Windows 10",
+      "versions": ["82.0"]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "cypress.json",
+    "build_name": "build-name",
+    "parallels": 1,
+    "specs": "./*.spec.js",
+    "ignore_files": "",
+    "npm_dependencies": {
+      "cypress": "6.1.0"
+    },
+    "feature_file_suppport": false
+  },
+  "tunnel_settings": {
+    "tunnel": false,
+    "tunnelName": null
+  }
+}
+```
 
-    `export LT_ACCESS_KEY="YOUR ACCESS KEY"`
+  </TabItem>
+</Tabs>
 
-* For Windows:
+Also in `run-settings` section you need to specify the path of your `spec.js` file on which you want to run the test on. Here we will pass the path of a **sample to do** spec.js file for our demo.
 
-    `set LT_USERNAME="YOUR_USERNAME"`
+```json
+"specs": "./cypress/integration/1-getting-started/todo.spec.js"
+```
 
-    `set LT_ACCESS_KEY="YOUR ACCESS KEY"`
+> In this demo, all occurences of http://localhost:8080 have been replaced with [https://example.cypress.io](https://example.cypress.io) to prevent running the Cypress tests locally. Alternatively, if you want to run your tests locally, refer to the [**Run locally**](https://www.lambdatest.com/support/docs/running-your-first-cypress-test/#running-your-cypress-tests-locally-on-lambdatest-platform) section below.
 
-Edit `lambdatest-config.json` for desired os/browser combination and Specs location. 
-please refer for [LambdaTest Capability Generator](https://www.lambdatest.com/capabilities-generator/) for list of available combination.
-
+3. Execute your tests using the following command in the terminal:
 
 ```bash
-## launch the lambdatest-cypress test runner
 lambdatest-cypress run
 ```
-You'll get a link to LambdaTest Dashboard like `https://automation.lambdatest.com/logs/?build=xxxxx`
-You should see the Kitchen Sink App up and running at lambdatest grid.
 
-### 2. Install & write tests in Cypress
+## View Your Cypress Testing Result On LambdaTest Platform
+---
 
-[Follow these instructions to install and write tests in Cypress.](https://on.cypress.io/installing-cypress)
+As soon as the tests starts executing, you can view them running. Just visit your LambdaTest Automation Dashboard.
 
-## Contributing
+![This is an image](https://www.lambdatest.com/support/assets/images/cypress-testin1-82ec5d8865b2125e60aa8523295a56b9.webp)
 
-Check out the [Contributing Guideline](/CONTRIBUTING.md).
+For each test, you can view the live video feed, screenshots for each test run, console logs, terminal logs and do much more using the **LambdaTest platform**.
 
-## Changelog
+If the test gets executed successfully, you will see a green tick on the Timeline view and a "Completed" message on the Automation logs view of your Automation dashboard. If not, then you will see a red cross and a "Failed" message respectively.
 
-- after v1.0.4 at [cypress-example-kitchensink/releases](https://github.com/cypress-io/cypress-example-kitchensink/releases)
-- before at [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
+<img loading="lazy" src={require('../assets/images/uploads/cypress-testing-2.webp').default} alt="Image" width="1281" height="722" className="doc_img"/>
+
+## Running Your Cypress Tests Locally On LambdaTest Platform
+---
+
+To run your tests locally on the LambdaTest platform, you need to [setup LambdaTest tunnel](/docs/testing-locally-hosted-pages/), and execute commands using the CLI, or [download UnderPass](/docs/underpass-tunnel-application/), our GUI based desktop app. Once you have the LambdaTest tunnel or Underpass set up and started, you can use the LambdaTest platform to run your Cypress tests locally.
+
+Now you need to activate the tunnel capability in the lambdatest_config.json file under the section "connection_settings" as shown below:
+
+```json
+  "connection_settings": {
+    "tunnel": true,
+    "tunnel_name": "lt-cypress-tunnel"
+  },
+```
+
+You can provide the name of the **LambdaTest tunnel** as per your requirements.
+
+# Authentication
+***
+    
+Authenticate your Cypress test runs in the following ways -
+
+1. Set up the **environment variables**. (or)
+2. Utilizing the **CLI params**. (or)
+3. Mention yourusername and access key in the **lambdatest-config.json**.
+
+> **Warning:** We use the following order of precedence to determine which auth credentials to use if you use more than one option to pass your auth credentials:
+
+CLI arguments > Options set in lambdatest-config.json > Environment variables
+
+## Utilizing CLI Params:
+
+---
+
+The following args can be used while running tests using the run command.
+
+| Arg        | Shorthand | Accepted values            |
+| ---------- | --------- | -------------------------- |
+| --username | -u        | Your LambdaTest username   |
+| --key      | -k        | Your LambdaTest access key |
+
+For example -
+
+```bash
+ lambdatest-cypress run --username YOUR_USERNAME --key YOUR_ACCESS_KEY
+```
+
+## Using lambdatest-config.json:
+
+---
+
+The auth option will help you in specifying your username and access key. You can find your username and access key in the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build). Both, the auth credentials set in environment variables and the ones mentioned in the lambdatest-config.json file will get overridden.
+
+<img loading="lazy" src={require('../assets/images/uploads/authentication.webp').default} alt="cmd" width="768" height="373" className="doc_img"/>
+
+The options supported in the auth are as follows:
+
+| Arg        | Accepted values            |
+| ---------- | -------------------------- |
+| username   | Your LambdaTest username   |
+| access_key | Your LambdaTest access key |
+
+For example -
+
+```json
+"lambdatest_auth": {
+      "username": "<your username>",
+      "access_key": "<your access key>"
+   },
+```
+
+## Setup the Environment Variables:
+
+---
+
+While utilizing the CLI params, you can set up the following environment variables.
+
+| Env variable  | Accepted values            |
+| ------------- | -------------------------- |
+| LT_USERNAME   | Your LambdaTest username   |
+| LT_ACCESS_KEY | Your LambdaTest access key |
+
+Or you can also set environment variables using following commands:
+
+- For **Linux/macOS**:
+
+```bash
+export LT_USERNAME="YOUR_USERNAME" export LT_ACCESS_KEY="YOUR ACCESS KEY"
+```
+
+- For **Windows**:
+
+```bash
+set LT_USERNAME="YOUR_USERNAME" set LT_ACCESS_KEY="YOUR ACCESS KEY"
+```
+
+> **Note** - By doing so, the auth credentials you use in your lambdatest-config.json file will get overridden only if these options are not provided in lambdatest-config.json.
+
+
+## LambdaTest Community :busts_in_silhouette:
+***
+The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with LambdaTest tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe.
+      
+## About LambdaTest
+***
+[LambdaTest](https://www.lambdatest.com/) is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.
+
+## Documentation & Resources :books:
+***
+      
+If you want to learn more about the LambdaTest's features, setup, and usage, visit the [LambdaTest documentation](https://www.lambdatest.com/support/docs/). You can also find in-depth tutorials around test automation, mobile app testing, responsive testing, manual testing on the [LambdaTest Blog](https://www.lambdatest.com/blog/) and [LambdaTest Learning Hub](https://www.lambdatest.com/learning-hub/).     
+      
+## We are here to help you :headphones:
+***
+* LambdaTest Support: [support@lambdatest.com](mailto:support@lambdatest.com)
+* Cypress Testing Page: https://www.lambdatest.com/cypress-testing
+* LambdaTest HomePage: https://www.lambdatest.com      
