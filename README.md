@@ -1,10 +1,11 @@
+![cypress-logo](https://user-images.githubusercontent.com/70570645/169593225-1b5e5831-54a6-4a54-bbc1-a37bc44d15cc.png)
 
-![This is an image](https://www.lambdatest.com/resources/images/Cypress_home.png)
+*Cypress is a modern web front-end testing tool built with JavaScript Mocha. Cypress testing operates directly on the browsers without the need for Selenium. Its unique DOM manipulation technique makes it a very developer and QA-friendly tool. With LambdaTest, you can perform Cypress testing on an online automation cloud of 40+ browsers versions.* 
 
-*Cypress is a modern web front-end testing tool built with JavaScript Mocha. Cypress testing operates directly on the browsers without the need for Selenium. Its unique DOM manipulation technique makes it a very developer and QA-friendly tool. With LambdaTest, you can perform Cypress testing on an online automation cloud of 40+ browsers versions. Learn how to get started with Cypress testing on the LambdaTest platform.*
+*Learn how to [get started with Cypress testing on the LambdaTest platform](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/).*
 
+# Cypress Cloud  ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 
-# Getting Started With Cypress Testing
 ***
 
 * [Pre-requisites](#pre-requisites)
@@ -13,7 +14,7 @@
     - [Utilizing CLI Params](#utilizing-cli-params)
     - [Using lambdatest-config.json](#using-lambdatest-configjson)
     - [Setup the Environment Variables](#setup-the-environment-variables)
-* [Cypress Parallel Testing](#cypress-parallel-testing)
+* [Cypress Parallel Testing](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/parallel-testing.md)
 * [Cypress CLI Commands](#cypress-cli-commands)
 * [Run Settings](run-settings)
 * [Download Artefact For Cypress Project](download-artefact-for-cypress-project)
@@ -129,13 +130,15 @@ lambdatest-cypress run
 
 As soon as the tests starts executing, you can view them running. Just visit your LambdaTest Automation Dashboard.
 
-![This is an image](https://www.lambdatest.com/support/assets/images/cypress-testin1-82ec5d8865b2125e60aa8523295a56b9.webp)
+
+<img height="400" src="https://user-images.githubusercontent.com/70570645/169592614-d41ad246-32c5-46e1-935c-6f0101f467e6.png">
 
 For each test, you can view the live video feed, screenshots for each test run, console logs, terminal logs and do much more using the **LambdaTest platform**.
 
 If the test gets executed successfully, you will see a green tick on the Timeline view and a "Completed" message on the Automation logs view of your Automation dashboard. If not, then you will see a red cross and a "Failed" message respectively.
+      
+<img height="400" src="https://user-images.githubusercontent.com/70570645/169593512-94f845b7-3bcc-40f8-a5c1-0c9ab872e3ff.png">
 
-<img loading="lazy" src={require('../assets/images/uploads/cypress-testing-2.webp').default} alt="Image" width="1281" height="722" className="doc_img"/>
 
 ## Running Your Cypress Tests Locally On LambdaTest Platform
 ---
@@ -188,9 +191,10 @@ For example -
 ---
 
 The auth option will help you in specifying your username and access key. You can find your username and access key in the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build). Both, the auth credentials set in environment variables and the ones mentioned in the lambdatest-config.json file will get overridden.
+      
+<img height="400" src="https://user-images.githubusercontent.com/70570645/169593640-9672bc33-49c1-4abe-8887-645a33defab7.png">
 
-<img loading="lazy" src={require('../assets/images/uploads/authentication.webp').default} alt="cmd" width="768" height="373" className="doc_img"/>
-
+      
 The options supported in the auth are as follows:
 
 | Arg        | Accepted values            |
@@ -231,22 +235,21 @@ export LT_USERNAME="YOUR_USERNAME" export LT_ACCESS_KEY="YOUR ACCESS KEY"
 ```bash
 set LT_USERNAME="YOUR_USERNAME" set LT_ACCESS_KEY="YOUR ACCESS KEY"
 ```
-
-> **Note** - By doing so, the auth credentials you use in your lambdatest-config.json file will get overridden only if these options are not provided in lambdatest-config.json.
-
+      
+> **Note** - By doing so, the auth credentials you use in your lambdatest-config.json file will get overridden only if these options are not provided in lambdatest-config.json.<br>
 
 ## LambdaTest Community :busts_in_silhouette:
 ***
 The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with LambdaTest tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe.
-      
-## About LambdaTest
-***
-[LambdaTest](https://www.lambdatest.com/) is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.
 
 ## Documentation & Resources :books:
 ***
       
 If you want to learn more about the LambdaTest's features, setup, and usage, visit the [LambdaTest documentation](https://www.lambdatest.com/support/docs/). You can also find in-depth tutorials around test automation, mobile app testing, responsive testing, manual testing on the [LambdaTest Blog](https://www.lambdatest.com/blog/) and [LambdaTest Learning Hub](https://www.lambdatest.com/learning-hub/).     
+      
+ ## About LambdaTest
+***
+[LambdaTest](https://www.lambdatest.com/) is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.     
       
 ## We are here to help you :headphones:
 ***
