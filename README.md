@@ -11,15 +11,18 @@
 * [Pre-requisites](#pre-requisites)
 * [Running Your First Cypress Test On LambdaTest Platform](#running-your-first-cypress-test-on-lambdatest-platform)
 * [Authentication](#authentication)
-    - [Utilizing CLI Params](#utilizing-cli-params)
-    - [Using lambdatest-config.json](#using-lambdatest-configjson)
-    - [Setup the Environment Variables](#setup-the-environment-variables)
 * [Cypress Parallel Testing](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/parallel-testing.md)
-* [Cypress CLI Commands](#cypress-cli-commands)
-* [Run Settings](run-settings)
-* [Download Artefact For Cypress Project](download-artefact-for-cypress-project)
-* [Integrate LambdaTest With Cypress Dashboard](integrate-lambdatest-with-cypress-dashboard)
-* [Execute Cypress Tests Including Private Dependencies](execute-cypress-tests-including-private-dependencies)
+* [Specify Browsers And OS](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/supported-browsers-os.md)
+* [Supported Cypress Versions](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/supported-cypress-versions.md)
+* [Cypress CLI Commands](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/cypress-cli.md)
+* [Run Settings](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/run-settings.md)
+* [Download Artefact For Cypress Project](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/download-artefacts.md)
+* [Integrate LambdaTest With Cypress Dashboard](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/cypress-dashboard.md)
+* [Execute Cypress Tests Including Private Dependencies](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/dependencies.md)
+* [Applitools Integration For Cypress](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/applitools-integration.md)
+* [ReportPortal.io Integration With LambdaTest For Cypress](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/reportportalio-integration.md)
+***
+
 # Pre-requisites
 
 ---
