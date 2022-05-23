@@ -3,12 +3,12 @@
     
 This article guides you on how to download the artefacts for a Cypress project from LambdaTest Cloud machine.
 
->In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/4DvAnCeBoY/cypress-example-kitchensink). You can find all the resources used for this article in the linked repo.
+>In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/LambdaTest/cypress-example-kitchensink/pull/21/?target=_blank). You can find all the resources used for this article in the linked repo.
 
 ## Downloading The Data From The LambdaTest Cloud Machine
 ---
 
-Assuming that you have run a Cypress test on lambdatest platform ( if not, this article [here](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/) will guide you in running your first Cypress test on LambdaTest), you need to follow these steps below:
+Assuming that you have run a Cypress test on LambdaTest platform ( if not, this article [here](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/?target=_blank) will guide you in running your first Cypress test on LambdaTest), you need to follow these steps below:
 
 ### Update LambdaTest Cypress CLI
 ---
