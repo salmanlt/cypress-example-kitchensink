@@ -27,12 +27,12 @@
 
 ---
 
-Before we get started, make sure to clone the [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/4DvAnCeBoY/cypress-example-kitchensink), used in this document. You can run your first Cypress test on the LambdaTest platform in a few simple steps:
+Before we get started, make sure to clone the [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/LambdaTest/cypress-example-kitchensink), used in this document. You can run your first Cypress test on the LambdaTest platform in a few simple steps:
 
 - **Step 1:** Clone the `LambdaTest-Cypress` kitchen sink example Github repo and navigate to the cloned directory.
 
   ```bash
-  git clone https://github.com/cypress-io/cypress-example-kitchensink.git
+  git clone https://github.com/LambdaTest/cypress-example-kitchensink
   cd cypress-example-kitchensink
   ```
 
@@ -52,9 +52,9 @@ Before we get started, make sure to clone the [LambdaTest's sample Cypress Kitch
 # Running Your First Cypress Test On LambdaTest Platform
 ***
 
-To demonstrate Cypress testing on the LambdaTest platform, we will use the [Cypress’ kitchen sink example](https://github.com/cypress-io/cypress-example-kitchensink) in the demo below.
+To demonstrate Cypress testing on the LambdaTest platform, we will use the Cypress’ Kitchen Sink example in the demo below.
 
-1.  Clone the [LambdaTest-Cypress’ kitchen sink example](https://github.com/4DvAnCeBoY/cypress-example-kitchensink) github repo and switch to the cloned directory.
+1.  Clone the [LambdaTest-Cypress’ kitchen sink example](https://github.com/LambdaTest/cypress-example-kitchensink) github repo and switch to the cloned directory.
 
 ```bash
 git clone https://github.com/cypress-io/cypress-example-kitchensink.git
@@ -67,7 +67,7 @@ cd cypress-example-kitchensink
 lambdatest-cypress init
 ```
 
-Here, we have used the below configuration as default and generated it in the `lambdatest-config.json` file. You need to set up the authentication by using LambdaTest credentials. You can check [here](https://www.lambdatest.com/support/docs/authentication) for more details about authentication.
+Here, we have used the below configuration as default and generated it in the `lambdatest-config.json` file. You need to set up the authentication by using LambdaTest credentials. You can check the [Authentication documentation](https://www.lambdatest.com/support/docs/authentication) for more details about authentication.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -120,7 +120,7 @@ Also in `run-settings` section you need to specify the path of your `spec.js` fi
 "specs": "./cypress/integration/1-getting-started/todo.spec.js"
 ```
 
-> In this demo, all occurences of http://localhost:8080 have been replaced with [https://example.cypress.io](https://example.cypress.io) to prevent running the Cypress tests locally. Alternatively, if you want to run your tests locally, refer to the [**Run locally**](https://www.lambdatest.com/support/docs/running-your-first-cypress-test/#running-your-cypress-tests-locally-on-lambdatest-platform) section below.
+> In this demo, all occurences of http://localhost:8080 have been replaced with [https://example.cypress.io](https://example.cypress.io) to prevent running the Cypress tests locally. Alternatively, if you want to run your tests locally, refer to the [**Run Cypress tests locally**](https://www.lambdatest.com/support/docs/running-your-first-cypress-test/#running-your-cypress-tests-locally-on-lambdatest-platform) section below.
 
 3. Execute your tests using the following command in the terminal:
 
@@ -146,7 +146,7 @@ If the test gets executed successfully, you will see a green tick on the Timelin
 ## Running Your Cypress Tests Locally On LambdaTest Platform
 ---
 
-To run your tests locally on the LambdaTest platform, you need to [setup LambdaTest tunnel](/docs/testing-locally-hosted-pages/), and execute commands using the CLI, or [download UnderPass](/docs/underpass-tunnel-application/), our GUI based desktop app. Once you have the LambdaTest tunnel or Underpass set up and started, you can use the LambdaTest platform to run your Cypress tests locally.
+To run your tests locally on the LambdaTest platform, you need to setup LambdaTest tunnel, and execute commands using the CLI, or [download UnderPass](https://downloads.lambdatest.com/underpass/master/UnderPass%20Setup.exe), our GUI based desktop app. Once you have the LambdaTest tunnel or Underpass set up and started, you can use the LambdaTest platform to run your Cypress tests locally.
 
 Now you need to activate the tunnel capability in the lambdatest_config.json file under the section "connection_settings" as shown below:
 
@@ -252,7 +252,7 @@ If you want to learn more about the LambdaTest's features, setup, and usage, vis
       
  ## About LambdaTest
 ***
-LambdaTest is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.     
+[LambdaTest](https://www.lambdatest.com) is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.     
     
 [<img height="50" src="https://user-images.githubusercontent.com/70570645/169649126-ed61f6de-49b5-4593-80cf-3391ca40d665.PNG">](https://accounts.lambdatest.com/register)
       
