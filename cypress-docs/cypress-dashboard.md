@@ -3,12 +3,12 @@
    
 This guide guides you on how to integrate **LambdaTest platform** with **The Cypress Dashboard**
 
-> In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/4DvAnCeBoY/cypress-example-kitchensink). You can find all the resources used for this article in the linked repo.
+> In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/LambdaTest/cypress-example-kitchensink). You can find all the resources used for this article in the linked repo.
 
 ## Steps To Integrate LambdaTest With Cypress Dashboard
 ---
 
-Assuming that you have run a Cypress test on lambdatest platform ( if not, this article [here](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/) will guide you in running your first Cypress test on LambdaTest), you need to follow these steps below:
+Assuming that you have run a Cypress test on LambdaTest platform ( if not, this article [here](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/) will guide you in running your first Cypress test on LambdaTest), you need to follow these steps below:
 
 ### Update LambdaTest Cypress CLI
 ---
