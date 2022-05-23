@@ -4,13 +4,13 @@
 This article guides you on how to execute your **Cypress** tests including the **private dependencies** on **LambdaTest platform**.
 Earlier if your project includes any private dependency, the tests will error out with the **LambdaError** on our platform but now we have built the support for handling the private dependencies.
 
-> In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/4DvAnCeBoY/cypress-example-kitchensink). You can find all the resources used for this article in the linked repo.
+> In this demo we are demonstrating using [LambdaTest's sample Cypress Kitchen Sink repo](https://github.com/LambdaTest/cypress-example-kitchensink). You can find all the resources used for this article in the linked repo.
 
 ## Steps To Execute Using Private Dependencies
 
 ---
 
-Assuming that you have run a Cypress test on lambdatest platform ( if not, this article [here](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/) will guide you in running your first Cypress test on LambdaTest), you need to follow these steps below:
+Assuming that you have run a Cypress test on LambdaTest platform. If not, refer to [running your first Cypress test](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/). Now follow the below steps to execute Cypress tests using private dependencies:
 
 ### Update LambdaTest Cypress CLI
 
