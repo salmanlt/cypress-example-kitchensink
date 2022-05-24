@@ -85,12 +85,12 @@ import TabItem from '@theme/TabItem';
     {
       "browser": "Chrome",
       "platform": "Windows 10",
-      "versions": ["86.0"]
+      "versions": ["latest"]
     },
     {
       "browser": "Firefox",
       "platform": "Windows 10",
-      "versions": ["82.0"]
+      "versions": ["latest"]
     }
   ],
   "run_settings": {
