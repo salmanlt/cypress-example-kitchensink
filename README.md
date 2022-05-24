@@ -1,4 +1,5 @@
-# Cypress Cloud  ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)<br>
+# Cypress Cloud  ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+
 
 ![cypress-logo](https://user-images.githubusercontent.com/70570645/169593225-1b5e5831-54a6-4a54-bbc1-a37bc44d15cc.png)
 
@@ -252,9 +253,9 @@ The [LambdaTest Community](https://community.lambdatest.com/) allows people to i
       
 If you want to learn more about the LambdaTest's features, setup, and usage, visit the [LambdaTest documentation](https://www.lambdatest.com/support/docs/). You can also find in-depth tutorials around test automation, mobile app testing, responsive testing, manual testing on [LambdaTest Blog](https://www.lambdatest.com/blog/) and [LambdaTest Learning Hub](https://www.lambdatest.com/learning-hub/).     
       
- ## About LambdaTest
+## About LambdaTest
 ***
-[LambdaTest](https://www.lambdatest.com) is the leading test execution and orchestration platform. It allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, operating systems, and real device combinations. You can accelerate your test execution and achieve fast feedback on code changes. Over 500 enterprises and 1Million + users across 132+ countries rely on LambdaTest for their web testing needs.
+[LambdaTest](https://www.lambdatest.com) is a leading test execution and orchestration platform that is fast, reliable, scalable, and secure. It allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, operating systems, and real device combinations. Using LambdaTest, businesses can ensure quicker developer feedback and hence achieve faster go to market. Over 500 enterprises and 1 Million + users across 130+ countries rely on LambdaTest for their testing needs.    
     
 [<img height="70" src="https://user-images.githubusercontent.com/70570645/169649126-ed61f6de-49b5-4593-80cf-3391ca40d665.PNG">](https://accounts.lambdatest.com/register)
       
