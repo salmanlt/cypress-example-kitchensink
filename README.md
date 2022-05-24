@@ -1,15 +1,17 @@
+# Cypress Cloud  ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)<br>
+
 ![cypress-logo](https://user-images.githubusercontent.com/70570645/169593225-1b5e5831-54a6-4a54-bbc1-a37bc44d15cc.png)
 
 *Cypress is a modern web front-end testing tool built with JavaScript Mocha. Cypress testing operates directly on the browsers without the need for Selenium. Its unique DOM manipulation technique makes it a very developer and QA-friendly tool. With LambdaTest, you can perform Cypress testing on an online automation cloud of 40+ browsers versions.* 
 
 *Learn how to [get started with Cypress testing on the LambdaTest platform](https://www.lambdatest.com/support/docs/getting-started-with-cypress-testing/).*
 
-# Cypress Cloud  ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
-
+## Table of Contents:
 ***
 
 * [Pre-requisites](#pre-requisites)
 * [Running Your First Cypress Test On LambdaTest Platform](#running-your-first-cypress-test-on-lambdatest-platform)
+* [Local Testing With Cypress](#running-your-cypress-tests-locally-on-lambdatest-platform)
 * [Authentication](#authentication)
 * [Cypress Parallel Testing](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/parallel-testing.md)
 * [Specify Browsers And OS](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/supported-browsers-os.md)
@@ -23,7 +25,7 @@
 * [ReportPortal.io Integration With LambdaTest For Cypress](https://github.com/LambdaTest/cypress-example-kitchensink/blob/master/cypress-docs/reportportalio-integration.md)
 ***
 
-# Pre-requisites
+## Pre-requisites
 
 ---
 
@@ -49,7 +51,7 @@ Before we get started, make sure to clone the [LambdaTest's sample Cypress Kitch
   ```bash
   lambdatest-cypress init
   ```
-# Running Your First Cypress Test On LambdaTest Platform
+## Running Your First Cypress Test On LambdaTest Platform
 ***
 
 To demonstrate Cypress testing on the LambdaTest platform, we will use the Cypress’ Kitchen Sink example in the demo below.
@@ -159,7 +161,7 @@ Now you need to activate the tunnel capability in the lambdatest_config.json fil
 
 You can provide the name of the **LambdaTest tunnel** as per your requirements.
 
-# Authentication
+## Authentication
 ***
     
 Authenticate your Cypress test runs in the following ways -
@@ -172,7 +174,7 @@ Authenticate your Cypress test runs in the following ways -
 
 CLI arguments > Options set in lambdatest-config.json > Environment variables
 
-## Utilizing CLI Params:
+### Utilizing CLI Params:
 
 ---
 
@@ -189,7 +191,7 @@ For example -
  lambdatest-cypress run --username YOUR_USERNAME --key YOUR_ACCESS_KEY
 ```
 
-## Using lambdatest-config.json:
+### Using lambdatest-config.json:
 
 ---
 
@@ -214,7 +216,7 @@ For example -
    },
 ```
 
-## Setup the Environment Variables:
+### Setup the Environment Variables:
 
 ---
 
@@ -243,7 +245,7 @@ set LT_USERNAME="YOUR_USERNAME" set LT_ACCESS_KEY="YOUR ACCESS KEY"
 
 ## LambdaTest Community :busts_in_silhouette:
 ***
-The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with LambdaTest tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe.
+The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe.
 
 ## Documentation & Resources :books:
 ***
@@ -252,12 +254,11 @@ If you want to learn more about the LambdaTest's features, setup, and usage, vis
       
  ## About LambdaTest
 ***
-[LambdaTest](https://www.lambdatest.com) is a leading test execution platform that allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, browser versions, and operating systems. You can accelerate your test execution and achieve faster release cycles. Over 500 enterprises and 1M+ users across 132+ countries rely on LambdaTest for their web testing needs.     
+[LambdaTest](https://www.lambdatest.com) is the leading test execution and orchestration platform. It allows users to run both manual and automated testing of web and mobile apps across 3000+ different browsers, operating systems, and real device combinations. You can accelerate your test execution and achieve fast feedback on code changes. Over 500 enterprises and 1Million + users across 132+ countries rely on LambdaTest for their web testing needs.
     
-[<img height="50" src="https://user-images.githubusercontent.com/70570645/169649126-ed61f6de-49b5-4593-80cf-3391ca40d665.PNG">](https://accounts.lambdatest.com/register)
+[<img height="70" src="https://user-images.githubusercontent.com/70570645/169649126-ed61f6de-49b5-4593-80cf-3391ca40d665.PNG">](https://accounts.lambdatest.com/register)
       
 ## We are here to help you :headphones:
 ***
-* LambdaTest Support: [support@lambdatest.com](mailto:support@lambdatest.com)
-* Cypress Testing Page: https://www.lambdatest.com/cypress-testing
-* LambdaTest HomePage: https://www.lambdatest.com      
+* Got a query? we are available 24x7 to help. [Contact Us](support@lambdatest.com)
+* For more info, visit - https://www.lambdatest.com
